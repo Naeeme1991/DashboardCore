@@ -11,6 +11,7 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
   const isFiltered = fields.some((key) => !!filter[key]);
   const dispatch = useDispatch();
 
+  /* declear variables for definition function*/
   const onRemoveKeywordFilter = () => {
     dispatch(applyFilter({ keyword: '' }));
   };
